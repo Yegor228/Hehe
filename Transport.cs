@@ -7,44 +7,44 @@ using System.Threading.Tasks;
 namespace Hehe
 {
 
-    interface ITransport
+    public interface ITransport
     {
-        void GetTypeTransport();
+        string GetTypeTransport();
 
-        abstract void Movement();
+        abstract string Movement();
     }
 
     abstract public class Transport : ITransport
     {
-        public abstract void Movement();
+        public abstract string Movement();
 
-        public void GetTypeTransport()
+        public string GetTypeTransport()
         {
-            Console.WriteLine(GetType());
+            return GetType().ToString();
         }
     }
 
     public class Car : Transport
     {
-        public override void Movement()
+        public override string Movement()
         {
-            Console.WriteLine("CAR - DRIVE");
+            return "CAR - DRIVE";
         }
     }
 
     public class Ship : Transport
     {
-        public override void Movement()
+        public override string Movement()
         {
-            Console.WriteLine("SHIP - DRIVE");
+            return "SHIP - DRIVE";
         }
     }
 
     public class Airplane: Transport
     {
-        public override void Movement()
+        public override string Movement()
         {
-            Console.WriteLine("AIRPLANE - FLY");
+            return "AIRPLANE - FLY";
         }
     }
 }
