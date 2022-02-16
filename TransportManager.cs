@@ -20,6 +20,7 @@ namespace Hehe
 
         public void AddNewTransport(List<ITransport> tl, ITransport transport)
         {
+            tl.Add(transport);
             NewTransportEventArgs e = new NewTransportEventArgs(tl, transport);
             OnNewTransport(e);
         }

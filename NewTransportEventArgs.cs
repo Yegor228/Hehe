@@ -13,7 +13,6 @@ namespace Hehe
 
         public NewTransportEventArgs(List<ITransport> tl, ITransport transport)
         {
-            tl.Add(transport);
             this.t_type = transport.GetTypeTransport();
             this.t_name = transport.GetType().ToString();
         }
