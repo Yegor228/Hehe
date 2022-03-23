@@ -8,7 +8,6 @@ namespace Hehe
 {
     internal class Subj1
     {
-
         public Subj1(TransportManager tm)
         {
             tm.NewTransport += NewTransportMsg;

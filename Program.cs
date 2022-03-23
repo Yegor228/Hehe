@@ -9,9 +9,11 @@ namespace Hehe
 
         static void Main(string[] args)
         {
-            TestTransport();
-       
+            //TestTransport();
+
+
         }
+
 
         static void TestTransport()
         {
@@ -28,7 +30,6 @@ namespace Hehe
             tm.AddNewTransport(transports, car);
             tm.AddNewTransport(transports, ship);
             tm.AddNewTransport(transports, airplane);
-
         }
 
       
